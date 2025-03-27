@@ -1,0 +1,25 @@
+<body>
+  <script>
+    let palabra = "murcielago";
+    let vocales = "aeiouAEIOU";
+    let numVocales = 0;
+    let numConsonantes = 0;
+    let palabraF = "";
+
+    for (let i = 0; i < palabra.length; i++) {
+      let letra = palabra[i];
+      if (vocales.includes(letra)) {
+          numVocales++;
+          palabraF += "f" + letra;
+      } else {
+        numConsonantes++;
+        palabraF += letra;
+      }
+    }
+
+    document.write(palabra + "<br>");
+        document.write("vocales: " + numVocales + "<br>");
+      document.write("consonantes: " + numConsonantes + "<br>");
+        document.write("idioma f: " + palabraF);
+  </script>
+</body>
