@@ -1,0 +1,26 @@
+<body>
+    <script>
+      let numeros = []; //se hizo un arreglo para tener todos los numeros de la serie guardados
+      let serie = "";
+      for (let i = 2; i <= 400; i += 2) { //contador para hacer la serie de 2 en 2 
+        numeros.push(i);
+        serie += i + " "; // Construir la serie como una cadena
+      }
+      document.write( serie + "<br><br>"); // Imprime la serie dejando espacios entre cada numero
+  
+      
+      let suma = 0;
+      for (let i = 0; i < numeros.length; i++) { //el for para ir sumando cada numer uno por uno 
+        suma += numeros[i]; //la operacion que nos dara el promedio de dividir la suma de lo numeros entre el numero total de numeros
+      }
+      let promedio = suma / numeros.length;
+      document.write("Promedio: " + promedio + ", ");
+  
+      
+      let mediana = numeros[numeros.length / 2];
+      document.write("Mediana: " + mediana + ", ");
+  
+      
+      document.write("Moda: Todos los numeros son moda por que se repiten una vez ");
+    </script>
+  </body>
