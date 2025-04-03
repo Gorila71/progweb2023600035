@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Meses</title>
+</head>
+<body>
+
+<p id="resultado"></p>
+
+<script>
+  const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+  let texto = "";
+  for (let i = 0; i < meses.length; i++) {
+    const ordinal = (i + 1) + "º";
+    texto += meses[i] + " (" + ordinal + ")<br>";
+  }
+  document.getElementById("resultado").innerHTML = texto;
+</script>
+
+</body>
+</html>
