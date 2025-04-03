@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+
+        function num (){
+        let números = [10, 20, 30, 40];
+        }
+</script>
+</head>
+
+<body>
+
+    <h1>Cadenas Numeros y Booleanos </h1>
+
+ <script>
+
+        let números = [10, 20, 30, 40]; 
+
+        let cadenas = ["Hola", " ", "Mundo", "!"];
+
+        let booleanos = [true, false, true, true]; 
+
+         let suma = 0;
+
+        for (let i = 0; i < números.length; i++) {
+
+            suma += números[i];
+
+        }
+
+        let concatenación = "";
+
+        for (let i = 0; i < cadenas.length; i++) {
+
+            concatenacion += cadenas[i];
+
+        }
+
+        let resultadoBooleano = booleanos[0]; 
+
+        for (let i = 1; i < booleanos.length; i++) {
+
+            resultadoBooleano = resultadoBooleano && booleanos[i]; 
+
+        }
+
+
+        document.getElementById("suma").innerText = "La suma de los números es: " + suma;
+
+        document.getElementById("concatenacion").innerText = "La concatenación de las cadenas es: " + concatenación;
+
+        document.getElementById("booleano").innerText = "El resultado de la operación AND entre los booleanos es: " + resultadoBooleano;
+
+    </script>
+
+</body>
+
+</html>
