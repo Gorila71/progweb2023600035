@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+body {
+  background-color: white; 
+}
+</style>
+<script>
+  const teclasColores = {
+    'a': 'red',
+    's': 'green',
+    'w': 'blue',
+    'd': 'yellow',
+    'z': 'magenta',
+    'x': 'cyan'
+  };
+
+  document.addEventListener('keydown', function(event) {
+    const tecla = event.key.toLowerCase();
+    if (teclasColores.hasOwnProperty(tecla)) {
+      document.body.style.backgroundColor = teclasColores[tecla];
+    }
+  });
+
+  document.addEventListener('keyup', function(event) {
+    const tecla = event.key.toLowerCase();
+    if (teclasColores.hasOwnProperty(tecla)) {
+      document.body.style.backgroundColor = 'white';
+    }
+  });
+</script>
+</head>
+<body>
+
+</body>
+</html>
